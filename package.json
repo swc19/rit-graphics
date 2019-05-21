@@ -1,14 +1,14 @@
 {
   "name": "rit-graphics",
-  "dependencies": {
-  },
+  "version": "1.0.0",
+  "description": "Speedruns Rochester marathon layouts",
+  "homepage": "https://twitter.com/SpeedrunROC",
+  "author": "swc19",
+  "license": "GPL-3.0",
+  "dependencies": {},
   "nodecg": {
     "compatibleRange": "^1.0.0",
-    "dependencies": [
-      "speedcontrol/nodecg-speedcontrol:>=0.9",
-      "PowerUpWithPride/speedcontrol-layoutswitch:>=1.0",
-      "PowerUpWithPride/speedcontrol-gdqtracker:>=1.0"
-    ],
+    "bundleDependencies": {},
     "graphics": [
       {
         "file": "layout.html",
@@ -16,6 +16,5 @@
         "height": 1080
       }
     ]
-  },
-  "license": "GPL-3.0"
+  }
 }
