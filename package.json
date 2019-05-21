@@ -1,0 +1,21 @@
+{
+  "name": "rit-graphics",
+  "dependencies": {
+  },
+  "nodecg": {
+    "compatibleRange": "^1.0.0",
+    "dependencies": [
+      "speedcontrol/nodecg-speedcontrol:>=0.9",
+      "PowerUpWithPride/speedcontrol-layoutswitch:>=1.0",
+      "PowerUpWithPride/speedcontrol-gdqtracker:>=1.0"
+    ],
+    "graphics": [
+      {
+        "file": "layout.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "license": "GPL-3.0"
+}
