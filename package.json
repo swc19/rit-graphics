@@ -1,8 +1,6 @@
 {
   "name": "rit-graphics",
   "version": "1.0.0",
-  "description": "Speedruns Rochester marathon layouts",
-  "homepage": "https://twitter.com/SpeedrunROC",
   "author": "swc19",
   "license": "GPL-3.0",
   "dependencies": {},

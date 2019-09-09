@@ -1,5 +1,4 @@
 function FixSize(selector){
-
 	setTimeout(function(){
 		var divWidth = $(selector + ":visible").width();
 		var fontSize = 92;
@@ -29,15 +28,29 @@ $(() => {
 
 	function loadSmashControl(){
 		const bundle = 'nodecg-smashcontrol';
-		var bracketlocation = $('.bracket-location');
+		var bracket = $('.bracket-location');
 		var player1tag = $('.player1-tag');
-		var player1score = $('.player1-score');
+		var p1score = $('.player1-score');
 		var player2tag = $('.player2-tag');
-		var player2score = $('.player2-score');
+		var p2score = $('.player2-score');
 
 
 		var player1score = nodecg.Replicant("player1Score", bundle);
 		var player2score = nodecg.Replicant("player2Score", bundle);
+		NodeCG.waitForReplicants(player1score, player2score).then(() => {
+			player1score.on('change', (newVal) => {
+				if (newVal){
+					p1score.html(player1score.value);
+				}
+			});
+			player2score.on('change', (newVal) => {
+				if (newVal){
+					p2score.html(player2score.value);
+				}
+			})
+		});
+
+
 		var setInfo = nodecg.Replicant("playerDataArray", bundle);
 		setInfo.on('change', (newVal, oldVal) => {
 			if (newVal)
@@ -45,14 +58,14 @@ $(() => {
 		});
 
 		function updateFields(setData){
-
-			bracketlocation.html(setData.bracketlocation);
+			bracket.html(setData.bracketlocation);
+			console.log(bracket.attr("class"));
+			FixSize('.bracket-location');
 			player1tag.html(setData.player1tag);
+			FixSize('.player1-tag');
 			player2tag.html(setData.player2tag);
-			NodeCG.waitForReplicants(player1score, player2score).then(() => {
-				player1score.html(player1score.value);
-				player2score.html(player2score.value);
-			});
+			FixSize('.player2-tag');
+
 		}
 	}
-})
+});

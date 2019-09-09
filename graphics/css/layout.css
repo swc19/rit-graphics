@@ -1,0 +1,84 @@
+@font-face {
+	font-family: Poppins-ExtraBold;
+	src: url("../font/Poppins-ExtraBold.ttf");
+}
+
+body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	display: block;
+	background: url("../images/layout_shaded.png");
+	font-family: Poppins-ExtraBold;
+	width: 1920px;
+	height: 1080px;
+	font-size: 18px;
+	position: relative;
+}
+.top-bar{
+	position: absolute;
+	top: 2px;
+	height: 35px;
+	line-height: 40px;
+	width: 365px;
+	left: 750px;
+	font-size: 28px;
+	text-align: center;
+}
+.player-info{
+	position: absolute;
+	display: inline-block;
+	bottom: 5px;
+}
+.player1-info{
+	position: absolute;
+	width: 185px;
+	left: 530px;
+	bottom: 15px;
+}
+.player1-tag{
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	bottom: 35.5px;
+	height: 35px;
+	line-height: 45px;
+	width: 145px;
+}
+.player1-score{
+	position: absolute;
+	color: orange;
+	text-align: center;
+	bottom: 29.5px;
+	width: 30px;
+	left: 180px;
+	font-size: 22px;
+}
+.player2-info{
+	position: absolute;
+	width: 185px;
+	left: 1270px;
+	bottom: 15px;
+}
+.player2-tag{
+	position: absolute;
+
+	text-align: center;
+	vertical-align: middle;
+	bottom: 35.5px;
+	height: 35px;
+	line-height: 45px;
+	width: 145px;
+
+}
+.player2-score{
+	position: absolute;
+	color: orange;
+	text-align: center;
+	bottom: 29.5px;
+	width: 30px;
+	font-size: 22px;
+	left: 180px;
+}
