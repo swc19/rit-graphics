@@ -1,17 +1,24 @@
 {
   "name": "rit-graphics",
   "version": "1.0.0",
-  "description": "Speedruns Rochester marathon layouts",
-  "homepage": "https://twitter.com/SpeedrunROC",
+  "description": "RIT Smash Club marathon layouts",
+  "homepage": "https://twitter.com/RITSmashClub",
   "author": "swc19",
   "license": "GPL-3.0",
-  "dependencies": {},
+  "dependencies": {
+    "html-to-image": "^0.1.1"
+  },
   "nodecg": {
     "compatibleRange": "^1.0.0",
     "bundleDependencies": {},
     "graphics": [
       {
         "file": "layout.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "thumbnail.html",
         "width": 1920,
         "height": 1080
       }
