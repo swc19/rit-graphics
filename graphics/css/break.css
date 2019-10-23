@@ -1,0 +1,73 @@
+@font-face {
+	font-family: Poppins-ExtraBold;
+	src: url("../font/Poppins-ExtraBold.ttf");
+}
+
+body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	display: block;
+	background: url("../images/break.png");
+	font-family: Poppins-ExtraBold;
+	width: 1920px;
+	height: 1080px;
+	font-size: 18px;
+	position: relative;
+}
+
+.players{
+	position: absolute;
+	text-align: center;
+	color: white;
+	font-size: 36px;
+	height: 35px;
+	line-height: 35px;
+}
+.player1-tag{
+	position: absolute;
+	left: 1375px;
+	top: 330px;
+	width: 285px;
+}
+.player1-score{
+	position: absolute;
+	left: 1660px;
+	top: 330px;
+	width: 50px;
+}
+
+.player2-tag{
+	position: absolute;
+	left: 1450px;
+	top: 400px;
+	width: 285px;
+}
+.player2-score{
+	position: absolute;
+	left: 1735px;
+	top: 400px;
+	width: 50px;
+}
+.commentators{
+	position: absolute;
+	text-align: center;
+	color: white;
+	font-size: 36px;
+	height: 35px;
+	line-height: 35px;
+}
+.commentator-1{
+	position: absolute;
+	width: 320px;
+	top: 175px;
+	left: 1500px;
+}
+.commentator-2{
+	position: absolute;
+	width: 320px;
+	top: 245px;
+	left: 1425px;
+}

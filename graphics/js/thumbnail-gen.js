@@ -57,9 +57,9 @@ $(() => {
 
 		function updateFields(setData){
 			thumbFileName = setData.player1tag + "_" + setData.player2tag + "_" + setData.bracketlocation + ".png";
-			bracketlocation.html(setData.bracketlocation);
-			player1name.html(setData.player1tag);
-			player2name.html(setData.player2tag);
+			bracketlocation.text(setData.bracketlocation);
+			player1name.text(setData.player1tag);
+			player2name.text(setData.player2tag);
 			var linkToRender = "../../nodecg-smashcontrol/dashboard/images/" + setData.game + "/renders/";
 			player1char.children().attr("src", (linkToRender + setData.player1character + ".png"));
             player2char.children().attr("src", (linkToRender + setData.player2character + ".png"));
