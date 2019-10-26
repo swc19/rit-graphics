@@ -54,20 +54,11 @@ $(() => {
 				updateFields(newVal);
 		});
 		function updateFields(setData){
-
-<<<<<<< HEAD
-			bracketlocation.html(setData.bracketlocation);
-			player1name.html(setData.player1tag);
-			player2name.html(setData.player2tag);
-			commentary1.html(setData.commentator1);
-			commentary2.html(setData.commentator2);
-=======
 			bracketlocation.text(setData.bracketlocation);
 			player1name.text(setData.player1tag);
 			player2name.text(setData.player2tag);
 			commentary1.text(setData.commentator1);
 			commentary2.text(setData.commentator2);
->>>>>>> 781f8dc2a22c4b1e6e27f34f4249de8c5ff0e7df
 			NodeCG.waitForReplicants(player1score, player2score).then(() => {
 				p1score.text(player1score.value);
 				p2score.text(player2score.value);
