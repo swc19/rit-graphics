@@ -65,6 +65,7 @@ $(() => {
             player2char.children().attr("src", (linkToRender + setData.player2character + ".png"));
 			FixSize('.player1-tag');
 			FixSize('.player2-tag');
+			FixSize('.bracket-location');
 		}
 	}
 })

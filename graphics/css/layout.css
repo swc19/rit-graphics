@@ -27,58 +27,48 @@ body{
 	font-size: 28px;
 	text-align: center;
 }
-.player-info{
-	position: absolute;
-	display: inline-block;
-	bottom: 5px;
-}
 .player1-info{
 	position: absolute;
+	text-align: center;
 	width: 185px;
 	left: 530px;
-	bottom: 15px;
+	bottom: 18px;
 }
 .player1-tag{
 	position: absolute;
-	text-align: center;
-	vertical-align: middle;
-	bottom: 35.5px;
-	height: 35px;
-	line-height: 45px;
-	width: 145px;
+	bottom: 38px;
+	height: 20px;
+	line-height: 20px;
+	width: 150px;
 }
 .player1-score{
 	position: absolute;
 	color: orange;
-	text-align: center;
-	bottom: 29.5px;
+	bottom: 30px;
 	width: 30px;
 	left: 180px;
-	font-size: 22px;
+	font-size: 24px;
 }
 .player2-info{
 	position: absolute;
+	text-align: center;
 	width: 185px;
 	left: 1270px;
-	bottom: 15px;
+	bottom: 18px;
 }
 .player2-tag{
 	position: absolute;
-
-	text-align: center;
-	vertical-align: middle;
-	bottom: 35.5px;
-	height: 35px;
-	line-height: 45px;
-	width: 145px;
+	bottom: 38px;
+	height: 20px;
+	line-height: 20px;
+	width: 150px;
 
 }
 .player2-score{
 	position: absolute;
 	color: orange;
-	text-align: center;
-	bottom: 29.5px;
+	bottom: 30px;
 	width: 30px;
-	font-size: 22px;
 	left: 180px;
+	font-size: 24px;
 }

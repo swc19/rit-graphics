@@ -71,11 +71,11 @@ body{
 }
 .bracket-location{
 	position: absolute;
-	font-size: 36px;
+	font-size: 60px;
 	width: 530px;
 	height: 60px;
 	line-height: 60px;
-	bottom: 405px;
+	bottom: 410px;
 	left: 696px;
 }
 

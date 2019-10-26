@@ -1,7 +1,7 @@
 {
   "name": "rit-graphics",
   "version": "1.0.0",
-  "description": "RIT Smash Club marathon layouts",
+  "description": "RIT Smash Club tournament layouts",
   "homepage": "https://twitter.com/RITSmashClub",
   "author": "swc19",
   "license": "GPL-3.0",
@@ -14,6 +14,11 @@
     "graphics": [
       {
         "file": "layout.html",
+        "width": 1920,
+        "height": 1080
+      },
+	  {
+        "file": "break.html",
         "width": 1920,
         "height": 1080
       },

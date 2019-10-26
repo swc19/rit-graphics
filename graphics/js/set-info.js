@@ -34,6 +34,8 @@ $(() => {
 		var p1score = $('.player1-score');
 		var player2name = $('.player2-tag');
 		var p2score = $('.player2-score');
+		var commentary1 = $('.commentator-1');
+		var commentary2 = $('.commentator-2');
 
 
 		var player1score = nodecg.Replicant("player1Score", bundle);
@@ -43,18 +45,27 @@ $(() => {
 			if (newVal)
 				updateFields(newVal);
 		});
-
+		player1score.on('change', (newVal, oldVal) => {
+			if (newVal)
+				updateFields(newVal);
+		});
+		player2score.on('change', (newVal, oldVal) => {
+			if (newVal)
+				updateFields(newVal);
+		});
 		function updateFields(setData){
 
 			bracketlocation.html(setData.bracketlocation);
 			player1name.html(setData.player1tag);
 			player2name.html(setData.player2tag);
+			commentary1.html(setData.commentator1);
+			commentary2.html(setData.commentator2);
 			NodeCG.waitForReplicants(player1score, player2score).then(() => {
 				p1score.html(player1score.value);
 				p2score.html(player2score.value);
 			});
-			FixSize('.player1-tag');
-			FixSize('.player2-tag');
+			toFix = ['.player1-tag', '.player2-tag', '.commentator-1', '.commentator-2']
+			toFix.map(FixSize)
 		}
 	}
 })
