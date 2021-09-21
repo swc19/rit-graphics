@@ -19,7 +19,7 @@ body{
 }
 .top-bar{
 	position: absolute;
-	top: 2px;
+	top: 5px;
 	height: 35px;
 	line-height: 40px;
 	width: 365px;
@@ -36,15 +36,23 @@ body{
 }
 .player1-tag{
 	position: absolute;
-	bottom: 38px;
+	bottom: 36px;
 	height: 20px;
 	line-height: 20px;
 	width: 150px;
 }
+.player1-pronouns{
+	position: absolute;
+	color:white;
+	font-size:14px;
+	bottom:9px;
+	left:52px;
+	width:150px;
+}
 .player1-score{
 	position: absolute;
 	color: orange;
-	bottom: 30px;
+	bottom: 28px;
 	width: 30px;
 	left: 180px;
 	font-size: 24px;
@@ -58,16 +66,23 @@ body{
 }
 .player2-tag{
 	position: absolute;
-	bottom: 38px;
+	bottom: 36px;
 	height: 20px;
 	line-height: 20px;
 	width: 150px;
-
+}
+.player2-pronouns{
+	position: absolute;
+	color:white;
+	font-size:14px;
+	bottom:9px;
+	left:55px;
+	width:150px;
 }
 .player2-score{
 	position: absolute;
 	color: orange;
-	bottom: 30px;
+	bottom: 28px;
 	width: 30px;
 	left: 180px;
 	font-size: 24px;

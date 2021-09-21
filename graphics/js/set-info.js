@@ -31,11 +31,15 @@ $(() => {
 		const bundle = 'nodecg-smashcontrol';
 		var bracketlocation = $('.bracket-location');
 		var player1name = $('.player1-tag');
+		var player1pronouns = $('.player1-pronouns');
 		var p1score = $('.player1-score');
 		var player2name = $('.player2-tag');
+		var player2pronouns = $('.player2-pronouns');
 		var p2score = $('.player2-score');
 		var commentary1 = $('.commentator-1');
+		var commentary1pronouns = $('.commentator1-pronouns');
 		var commentary2 = $('.commentator-2');
+		var commentary2pronouns = $('.commentator2-pronouns');
 
 
 		var player1score = nodecg.Replicant("player1Score", bundle);
@@ -56,9 +60,13 @@ $(() => {
 		function updateFields(setData){
 			bracketlocation.text(setData.bracketlocation);
 			player1name.text(setData.player1tag);
+			player1pronouns.text(setData.player1pronouns);
 			player2name.text(setData.player2tag);
+			player2pronouns.text(setData.player2pronouns);
 			commentary1.text(setData.commentator1);
+			commentary1pronouns.text(setData.commentator1pronouns);
 			commentary2.text(setData.commentator2);
+			commentary2pronouns.text(setData.commentator2pronouns);
 			NodeCG.waitForReplicants(player1score, player2score).then(() => {
 				p1score.text(player1score.value);
 				p2score.text(player2score.value);
