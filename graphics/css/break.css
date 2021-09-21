@@ -28,46 +28,77 @@ body{
 }
 .player1-tag{
 	position: absolute;
-	left: 1375px;
-	top: 330px;
+	left: 1360px;
+	top: 292px;
 	width: 285px;
 }
 .player1-score{
 	position: absolute;
-	left: 1660px;
-	top: 330px;
+	left: 1640px;
+	top: 294px;
 	width: 50px;
 }
-
+.player1-pronouns{
+	position: absolute;
+	color:black;
+	font-size:24px;
+	left: 1505px;
+	top: 345px;
+	width: 140px;
+}
 .player2-tag{
 	position: absolute;
 	left: 1450px;
-	top: 400px;
+	top: 410px;
 	width: 285px;
 }
 .player2-score{
 	position: absolute;
-	left: 1735px;
-	top: 400px;
+	left: 1725px;
+	top: 412px;
 	width: 50px;
+}
+.player2-pronouns{
+	position: absolute;
+	color:black;
+	font-size:24px;
+	left: 1590px;
+	top: 463px;
+	width: 140px;
 }
 .commentators{
 	position: absolute;
 	text-align: center;
-	color: white;
+	color: black;
 	font-size: 36px;
 	height: 35px;
 	line-height: 35px;
 }
 .commentator-1{
 	position: absolute;
+	left: 1420px;
+	top: 42px;
 	width: 320px;
-	top: 175px;
-	left: 1500px;
+}
+.commentator1-pronouns{
+	position: absolute;
+	color:white;
+	font-size:24px;
+	left: 1565px;
+	top: 93px;
+	width: 140px;
 }
 .commentator-2{
 	position: absolute;
+	left: 1500px;
+	top: 160px;
 	width: 320px;
-	top: 245px;
-	left: 1425px;
+}
+.commentator2-pronouns{
+	position: absolute;
+	color:white;
+	font-size:24px;
+	left: 1645px;
+	top: 211px;
+	width: 140px;
 }
