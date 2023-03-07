@@ -1,0 +1,148 @@
+@font-face {
+	font-family: BulletproofDeco;
+	src: url("../../font/BulletproofDecoBB_ital.ttf");
+}
+@font-face{
+    font-family: BulletproofItal;
+    src: url("../../font/BulletproofBB_ital.ttf")
+}
+@font-face{
+    font-family: Bulletproof;
+    src: url("../../font/BulletproofBB.ttf")
+}
+
+body{
+    font-family: BulletproofDeco;
+}
+.top8-container{
+	display: block;
+	width: 1920px;
+	height: 1080px;
+    left:0;
+    top:0;
+	position: absolute;
+	overflow: hidden;
+}
+.top8{
+	width: 1920px;
+	height: 1080px;
+}
+.background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.text{
+	position: relative;
+	text-transform: uppercase;
+	display: block;
+	z-index: 10;
+}
+.player-info{
+    color: white;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    z-index: 10;
+    width: 1350px;
+    height: 650px;
+    left: 440px;
+    top: 465px;
+    font-size: 48px;
+    line-height: 72px;
+    vertical-align: center;
+    z-index: 10;
+}
+.player-info > .row1{
+    left: 105px;
+    width: 290px;
+    height: 75px;
+}
+.player-info > .row2{
+    top: 215px;
+    width: 295px;
+    height: 75px;
+}
+.renders{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1200px;
+    height: 1000px;
+    left: 425px;
+    top: 50px;
+    z-index: 2;
+}
+.renders img{
+    position: absolute;
+    left: -30px;
+	max-height: 550px;
+    top: 20px;
+    width: auto;
+	object-fit: contain;
+    transform: scale(.85);
+    transform: rotate(-7.5deg);
+}
+.renders > .row1{
+    position: relative;
+    transform: rotate(7.5deg);
+    height: 475px;
+    width:315px;
+    left: 115px;
+    overflow: hidden;
+}
+
+.renders > .row2{
+    position: relative;
+    transform: rotate(7.5deg);
+    height: 500px;
+    left: 10px;
+    width:335px;
+    top: 50px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.player4-render img{
+    position:absolute;
+    left: -45px;
+}
+.tournament-info{
+    position:absolute;
+    font-family: BulletproofItal;
+    color: black;
+    z-index: 3;
+    width: 500px;
+    height: 250px;
+    left: 10px;
+    top: 200px;
+    font-size: 56px;
+}
+.tourney-name{
+    position:relative;    
+    left: -25px;
+    margin-bottom: -25px;
+    font-size: 256px;
+}
+.off-week{
+    position:absolute;
+    font-family: Bulletproof;
+    transform: rotate(-90deg);
+    font-size: 32px;
+    left: 275px;
+    top: 85px;
+}
+.foreground-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 1920px;
+	height: 1080px;
+	z-index: 3;
+}
+.ui-button{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	z-index: 4;
+}

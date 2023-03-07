@@ -1,6 +1,6 @@
 @font-face {
-	font-family: Poppins-ExtraBold;
-	src: url("../font/Poppins-ExtraBold.ttf");
+	font-family: Newake-Font-Demo;
+	src: url("../font/Newake-Font-Demo.otf");
 }
 body{
 	box-sizing: border-box;
@@ -8,7 +8,7 @@ body{
 	margin: 0;
 }
 .thumbnail-container{
-	font-family: Poppins-ExtraBold;
+	font-family: Newake-Font-Demo;
 	display: block;
 	width: 1920px;
 	height: 1080px;
