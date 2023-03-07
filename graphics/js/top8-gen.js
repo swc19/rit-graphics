@@ -90,7 +90,7 @@ $(() => {
 				tag[0].text(top8Data[`${tag[1]}tag`]);
 				FixSize(`${tag[0].attr('class')}`)
 			});
-			var linkToRender = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}/renders/`;
+			var linkToRender = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}/renders`;
 			char_array.forEach((char) => {
 				char[0].children().attr("src", (`${linkToRender}/${top8Data[char[1]].split("[REMIX] ").at(-1)}/${top8Data[char[2]]}.png`));
 			});

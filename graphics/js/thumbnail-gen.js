@@ -60,9 +60,9 @@ $(() => {
 			bracketlocation.text(setData.bracketlocation);
 			player1name.text(setData.player1tag);
 			player2name.text(setData.player2tag);
-			var linkToRender = "../../nodecg-smashcontrol/dashboard/images/" + setData.game + "/renders/";
-			player1char.children().attr("src", (linkToRender + setData.player1character + ".png"));
-            player2char.children().attr("src", (linkToRender + setData.player2character + ".png"));
+			var linkToRender = `../../nodecg-smashcontrol/dashboard/images/${setData.game}/renders`;
+			player1char.children().attr("src", (`${linkToRender}/${setData.player1character.split("[REMIX] ").at(-1)}/Default.png`));
+            player2char.children().attr("src", (`${linkToRender}/${setData.player2character.split("[REMIX] ").at(-1)}/Default.png`));
 			FixSize('.player1-tag');
 			FixSize('.player2-tag');
 			FixSize('.bracket-location');
