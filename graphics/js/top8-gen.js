@@ -45,6 +45,7 @@ $(() => {
 	function loadSmashControl(){
 		const bundle = 'nodecg-smashcontrol';
 		var tourneyname = $('.tourney-name');
+		var tourneynumber = $('.tourney-number');
 		var tourneydate = $('.tourney-date');
 		var tourneyentrants = $('.tourney-entrants');
 		var offweek = $('.off-week');
@@ -76,11 +77,11 @@ $(() => {
 			var char_array = [[player1char, '1main', '1costume'], [player2char, '2main', '2costume'], [player3char, '3main', '3costume'], [player4char, '4main', '4costume'], 
 								[player5achar, '5amain', '5acostume'], [player5bchar, '5bmain', '5bcostume'], [player7achar, '7amain', '7acostume'], [player7bchar, '7bmain', '7bcostume']];
 			thumbFileName = top8Data.tourneyname + "_top8.png";
-			tourneyname.text(top8Data.tourneyname);
+			tourneyname.text(top8Data.tourneyname.match(/([A-Z a-z]+)/)[0]);
 			tourneydate.text(top8Data.tourneydate);
 			tourneyentrants.text(`${top8Data.tourneyentrants} entrants`);
+			tourneynumber.text(top8Data.tourneyname.match(/\d+/)[0]);
 			if(top8Data.tourneyname.toLowerCase().includes("off-week")){
-				tourneyname.text(top8Data.tourneyname.toLowerCase().split("off-week").at(0));
 				offweek.text("Off-Week");
 			} else {
 				offweek.text('');

@@ -100,12 +100,22 @@ body{
     left: 10px;
     width:335px;
     top: 50px;
-    margin-right: 5px;
+    margin-right: 18px;
     overflow: hidden;
 }
-.player4-render img{
+.player1-render{
+    margin-left: 10px;
+}
+.player5a-render{
+    margin-left: 10px;
+}
+.player4-render{
     position:absolute;
-    left: -45px;
+    margin-left: -30px;
+}
+.player7b-render{
+    position:absolute;
+    margin-left: -30px;
 }
 .tournament-info{
     position:absolute;
@@ -114,13 +124,13 @@ body{
     z-index: 3;
     width: 500px;
     height: 250px;
-    left: 10px;
-    top: 200px;
+    left: 20px;
+    top: 30px;
     font-size: 56px;
 }
-.tourney-name{
+.tourney-number{
     position:relative;    
-    left: -25px;
+    left: -15px;
     margin-bottom: -25px;
     font-size: 256px;
 }
@@ -129,8 +139,8 @@ body{
     font-family: Bulletproof;
     transform: rotate(-90deg);
     font-size: 32px;
-    left: 275px;
-    top: 85px;
+    left: 300px;
+    top: 190px;
 }
 .foreground-image{
 	position: absolute;
@@ -143,6 +153,7 @@ body{
 .ui-button{
 	width: 150px;
 	height: 150px;
+    left: 960px;
 	position: absolute;
 	z-index: 4;
 }
