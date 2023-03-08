@@ -1,5 +1,4 @@
 var thumbFileName;
-
 function FixSize(selector){
 	selector = `.${selector.split(" ").at(2)}`;
 	setTimeout(function(){
@@ -26,18 +25,13 @@ function FixSize(selector){
 	}, 500);
 }
 function takeScreen(){
-	html2canvas($('.top8').get(0), {width:1920, height:1080}).then(function(canvas) {
-		var link = document.createElement('a');
-		if (typeof link.download === 'string'){
-			link.href = canvas.toDataURL();
-			link.download = thumbFileName;
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link);
-		} else {
-			window.open(canvas.toDataURL());
-		}
-	});
+	domtoimage.toPng(document.getElementById('top8'))
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = thumbFileName;
+        link.href = dataUrl;
+        link.click();
+    });
 }
 $(() => {
 	loadSmashControl();
@@ -92,6 +86,7 @@ $(() => {
 			});
 			var linkToRender = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}/renders`;
 			char_array.forEach((char) => {
+				console.log(char, top8Data);
 				char[0].children().attr("src", (`${linkToRender}/${top8Data[char[1]].split("[REMIX] ").at(-1)}/${top8Data[char[2]]}.png`));
 			});
 		}

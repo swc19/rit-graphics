@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/top8/64_top8.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+	<script src="../bower_components/dom-to-image/dist/dom-to-image.min.js"></script>
 	<script src="js/top8-gen.js"></script>
 
 </head>
@@ -15,7 +15,7 @@
 
 <div class="top8-container">
 	<button class="save-to-image ui-button ui-widget" onclick="takeScreen()">Save as Image</button>
-	<div class="top8">
+	<div class="top8" id="top8">
 		<div class="layout-images">
 			<div class="image background-image"><img src="images/top8/64_bg.png"></div>
 			<div class="image foreground-image"><img src="images/top8/64_fg.png"></div>
