@@ -52,6 +52,7 @@ body{
     font-size: 48px;
     line-height: 72px;
     vertical-align: center;
+    text-align: center;
     z-index: 10;
 }
 .player-info > .row1{
@@ -113,6 +114,53 @@ body{
 }
 .player5a-render{
     margin-left: 10px;
+}
+.secondaries{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    z-index: 10;
+    width: 1350px;
+    height: 650px;
+    left: 440px;
+    top: 465px;
+    font-size: 48px;
+    line-height: 72px;
+    vertical-align: center;
+}
+.secondaries img {
+    transform: scale(2.5);
+}
+.secondaries > .row1{
+    position: relative;
+    left: 160px;
+    top: -95px;
+}
+.player2-secondary{
+    margin-left: 5px;
+}
+.player3-secondary{
+    margin-left: 5px;
+}
+.player4-secondary{
+    margin-left: -15px;
+}
+
+.secondaries > .row2{
+    position: relative;
+    left: 45px;
+    top: 130px;
+    width: 295px;
+    height: 75px;
+}
+.player5b-secondary{
+    margin-left: 5px;
+}
+.player7a-secondary{
+    margin-left: 10px;
+}
+.player7b-secondary{
+    margin-left: -10px;
 }
 .tournament-info{
     position:absolute;

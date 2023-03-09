@@ -45,20 +45,28 @@ $(() => {
 		var offweek = $('.off-week');
 		var player1name = $('.player1-tag');
 		var player1char = $('.player1-render');
+		var player1secondary = $('.player1-secondary');
 		var player2name = $('.player2-tag');
 		var player2char = $('.player2-render');
+		var player2secondary = $('.player2-secondary');
 		var player3name = $('.player3-tag');
 		var player3char = $('.player3-render');
+		var player3secondary = $('.player3-secondary');
 		var player4name = $('.player4-tag');
 		var player4char = $('.player4-render');
+		var player4secondary = $('.player4-secondary');
 		var player5aname = $('.player5a-tag');
 		var player5achar = $('.player5a-render');
+		var player5asecondary = $('.player5a-secondary');
 		var player5bname = $('.player5b-tag');
 		var player5bchar = $('.player5b-render');
+		var player5bsecondary = $('.player5b-secondary');
 		var player7aname = $('.player7a-tag');
 		var player7achar = $('.player7a-render');
+		var player7asecondary = $('.player7a-secondary');
 		var player7bname = $('.player7b-tag');
 		var player7bchar = $('.player7b-render');
+		var player7bsecondary = $('.player7b-secondary');
 		var top8Info = nodecg.Replicant("top8Array", bundle);
 		top8Info.on('change', (newVal, oldVal) => {
 			if (newVal)
@@ -70,6 +78,8 @@ $(() => {
 								[player5aname, '5a'], [player5bname, '5b'], [player7aname, '7a'], [player7bname, '7b']];
 			var char_array = [[player1char, '1main', '1costume'], [player2char, '2main', '2costume'], [player3char, '3main', '3costume'], [player4char, '4main', '4costume'], 
 								[player5achar, '5amain', '5acostume'], [player5bchar, '5bmain', '5bcostume'], [player7achar, '7amain', '7acostume'], [player7bchar, '7bmain', '7bcostume']];
+			var secondary_array = [[player1secondary, '1secondary'], [player2secondary, '2secondary'], [player3secondary, '3secondary'], [player4secondary, '4secondary'], 
+									[player5asecondary, '5asecondary'], [player5bsecondary, '5bsecondary'], [player7asecondary, '7asecondary'], [player7bsecondary, '7bsecondary']];
 			thumbFileName = top8Data.tourneyname + "_top8.png";
 			tourneyname.text(top8Data.tourneyname.match(/([A-Z a-z]+)/)[0]);
 			tourneydate.text(top8Data.tourneydate);
@@ -86,9 +96,15 @@ $(() => {
 			});
 			var linkToRender = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}/renders`;
 			char_array.forEach((char) => {
-				console.log(char, top8Data);
 				char[0].children().attr("src", (`${linkToRender}/${top8Data[char[1]].split("[REMIX] ").at(-1)}/${top8Data[char[2]]}.png`));
 			});
+			var linkToIcon = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}`
+			secondary_array.forEach((char) => {
+				if(top8Data[char[1]] !== null && top8Data[char[1]] !== '' ){
+					char[0].children().attr("src", (`${linkToIcon}/${top8Data[char[1]].split("[REMIX] ").at(-1)}.png`));
+					}		
+				}
+			)
 		}
 	}
 })

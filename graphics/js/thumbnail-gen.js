@@ -26,18 +26,13 @@ function FixSize(selector){
 	}, 500);
 }
 function takeScreen(){
-	html2canvas($('.thumbnail').get(0), {width:1920, height:1080}).then(function(canvas) {
-		var link = document.createElement('a');
-		if (typeof link.download === 'string'){
-			link.href = canvas.toDataURL();
-			link.download = thumbFileName;
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link);
-		} else {
-			window.open(canvas.toDataURL());
-		}
-	});
+	domtoimage.toPng(document.getElementById('thumbnail'))
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = thumbFileName;
+        link.href = dataUrl;
+        link.click();
+    });
 }
 $(() => {
 	loadSmashControl();
