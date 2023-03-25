@@ -27,7 +27,7 @@ function FixSize(selector){
 function takeScreen(){
 	domtoimage.toPng(document.getElementById('top8'))
     .then(function (dataUrl) {
-        var link = document.createElement('a');
+        let link = document.createElement('a');
         link.download = thumbFileName;
         link.href = dataUrl;
         link.click();
@@ -100,9 +100,12 @@ $(() => {
 			});
 			var linkToIcon = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}`
 			secondary_array.forEach((char) => {
-				if(top8Data[char[1]] !== null && top8Data[char[1]] !== '' ){
-					char[0].children().attr("src", (`${linkToIcon}/${top8Data[char[1]].split("[REMIX] ").at(-1)}.png`));
-					}		
+					if(top8Data[char[1]] !== null && top8Data[char[1]] !== '' ){
+						char[0].children().attr("src", (`${linkToIcon}/${top8Data[char[1]].split("[REMIX] ").at(-1)}.png`));
+					}
+					else {
+						char[0].remove();
+					}
 				}
 			)
 		}
