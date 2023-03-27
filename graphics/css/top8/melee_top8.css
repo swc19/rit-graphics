@@ -190,7 +190,7 @@ body{
     height: 250px;
     left: 20px;
     top: 30px;
-    font-size: 56px;
+    font-size: 48px;
 }
 .tourney-number{
     position:relative;    
@@ -204,7 +204,7 @@ body{
     transform: rotate(-90deg);
     font-size: 32px;
     left: 300px;
-    top: 190px;
+    top: 225px;
 }
 .foreground-image{
 	position: absolute;
