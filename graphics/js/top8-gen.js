@@ -33,6 +33,10 @@ function takeScreen(){
         link.click();
     });
 }
+function moveRender(render, value){
+	$(render).children('img').css("left", `${value}px`);
+}
+
 $(() => {
 	loadSmashControl();
 

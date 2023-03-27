@@ -96,7 +96,7 @@ body{
     position: relative;
     transform: rotate(7.5deg);
     height: 500px;
-    top: 45px;
+    top: 55px;
     left: 10px;
     width:335px;
     margin-right: 10px;
@@ -111,7 +111,25 @@ body{
 .player7b-render img{
     left: -55px;
 }
-
+.sliders{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position:absolute;
+    top: 400px;
+    left: 550px;
+    height: 100px;
+    width: 1350px;
+    column-gap: 100px;
+    row-gap: 500px;
+    z-index: 20;
+}
+.sliders > .slider{
+    width: 200px;
+}
+.sliders > .row2{
+    position: relative;
+    left: -100px;
+}
 .secondaries{
     position: absolute;
     display: grid;
