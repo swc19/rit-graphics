@@ -108,7 +108,7 @@ $(() => {
 						char[0].children().attr("src", (`${linkToIcon}/${top8Data[char[1]].split("[REMIX] ").at(-1)}.png`));
 					}
 					else {
-						char[0].remove();
+						char[0].children().attr("src", (`${linkToIcon}/Blank.png`));
 					}
 				}
 			)
