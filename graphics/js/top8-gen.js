@@ -100,7 +100,12 @@ $(() => {
 			});
 			var linkToRender = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}/renders`;
 			char_array.forEach((char) => {
-				char[0].children().attr("src", (`${linkToRender}/${top8Data[char[1]].split("[REMIX] ").at(-1)}/${top8Data[char[2]]}.png`));
+				if(top8Data[char[1]] !== null && top8Data[char[1]] !== '' ){
+					char[0].children().attr("src", (`${linkToRender}/${top8Data[char[1]].split("[REMIX] ").at(-1)}/${top8Data[char[2]]}.png`));
+				}
+				else {
+					char[0].remove()
+				}
 			});
 			var linkToIcon = `../../nodecg-smashcontrol/dashboard/images/${top8Data.game}`
 			secondary_array.forEach((char) => {
